@@ -23,6 +23,9 @@ class ContactController extends AbstractController
         return $this->render('contact/index.html.twig', ['contacts' => $contactRepository->findAll()]);
     }
 
+
+
+
     /**
      * @Route("/new", name="contact_new", methods="GET|POST")
      */
@@ -37,7 +40,7 @@ class ContactController extends AbstractController
             $em->persist($contact);
             $em->flush();
 
-            return $this->redirectToRoute('contact_index');
+            return $this->redirectToRoute('contact_new');
         }
 
         return $this->render('contact/new.html.twig', [
