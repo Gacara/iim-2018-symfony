@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }}!{% endblock %}
+{% block title %}Accueil Blog{% endblock %}
 
 {% block body %}
 <style>
@@ -10,14 +10,11 @@
 
 <div class="example-wrapper">
 
+
+
+    <h1>Veuillez vous connecter svp</h1>
+
     <a href="{{ path('app_login') }}">Login</a>
 
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'src/Controller/IndexController.php'|file_link(0) }}">src/Controller/IndexController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'templates/index/index.html.twig'|file_link(0) }}">templates/index/index.html.twig</a></code></li>
-    </ul>
 </div>
 {% endblock %}

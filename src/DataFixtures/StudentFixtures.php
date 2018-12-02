@@ -13,7 +13,7 @@ class StudentFixtures extends Fixture
      */
     public function load(ObjectManager $manager)
     {
-        for($i = 0; $i < 50; $i++){
+        for($i = 0; $i < 5; $i++){
 
             $student = new Student();
             $student->setName('Romain Goulet' .$i);

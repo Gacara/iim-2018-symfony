@@ -85,7 +85,7 @@ class AppLoginAuthenticator extends AbstractFormLoginAuthenticator
             return new RedirectResponse($targetPath);
         }
 
-        return new RedirectResponse($this->router->generate('student_index'));
+        return new RedirectResponse($this->router->generate('post_index'));
     }
     protected function getLoginUrl()
     {
