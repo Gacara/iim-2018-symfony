@@ -37,7 +37,13 @@ class TodoController extends Controller
     {
         return Todolist::where('Accepted', false)->get();
     }
-    
+
+    public function getAllimgdTodos()
+    {
+        return Todolist::where('img', true)->get();
+    }
+
+
     /**
      * Store a newly created resource in storage.
      *
@@ -79,8 +85,11 @@ class TodoController extends Controller
         $todo->TodoName = $request->TodoName;
         $todo->IsDone = $request->IsDone;
         $todo->Accepted = $request->Accepted;
+        $todo->img = $request->img;
+
         $todo->save();
 
         return Response::json($todo);
     }
 }
+

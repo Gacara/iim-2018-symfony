@@ -40,6 +40,8 @@ app.controller('mainController', ['$scope', '$http', 'toastr', 'TodoService', fu
             return true; };
 
 
+		
+
 	}
 
 	initializeTodos();
@@ -49,7 +51,7 @@ app.controller('mainController', ['$scope', '$http', 'toastr', 'TodoService', fu
 
 		TodoService.add(input).success(function (data) {
 			$scope.myinput = "";
-			toastr.success('Successfully added!', 'Success');
+			toastr.success('Image ajoutée en attente!', 'Success');
 			$scope.anyActiveTodos = true;
 			
 			initializeTodos();
@@ -76,7 +78,7 @@ app.controller('mainController', ['$scope', '$http', 'toastr', 'TodoService', fu
 				toastr.success('Done a task!', 'Success');
 			});
 
-			//todo: logic here...
+		
 		}
 	}
 

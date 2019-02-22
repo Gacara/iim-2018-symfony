@@ -24,6 +24,7 @@ Route::group(['prefix' => 'api/v1'], function() {
     Route::get('todos/completed', 'TodoController@getAllCompletedTodos');
     Route::get('todos/accepted', 'TodoController@getAllAcceptedTodos');
     Route::get('todos/nonaccepted', 'TodoController@getAllNonAcceptedTodos');
+    Route::get('todos/img', 'TodoController@getAllimgTodos');
     Route::resource('todos', 'TodoController');
 });
 Route::auth();

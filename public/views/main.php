@@ -1,10 +1,15 @@
 <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
         <h1>Upload des photos</h1>
+
+
+
         <form ng-submit="addTodos()">        	
 	        <input ng-model="myinput" type="text" name="todo" placeholder="Upload une photo" class="form-control input-lg">
         </form>             
     </div>
+
+
     <div class="col-lg-8 col-lg-offset-2">
     <br />
 		<uib-tabset type="pills">
@@ -45,6 +50,8 @@
 				    			<div class="col-md-4">
                                     <!-- <span ng-class="{'task-crossout': list.IsDone}"> {{list.TodoName}} </span> -->
                                     <img src="{{list.TodoName}}" height="250">
+                                    <img src="{{list.img}}" height="250">
+
 				    			</div>
 			    			</div>
 			    		</li>

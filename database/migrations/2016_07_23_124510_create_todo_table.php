@@ -18,6 +18,9 @@ class CreateTodoTable extends Migration
             $table->boolean('IsDone');
             $table->integer('OrderNum');
             $table->integer('Accepted');
+
+            $user->image = $big_image->encode('jpg', 80);
+            $user->save();
             // $table->integer('UserId')->unsigned();
             // $table->foreign('UserId')->references('id')->on('users');
             $table->timestamps();
